@@ -5,9 +5,6 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-
-import Foundation
-
 public enum TextAlignValue: String {
   
   case left = "left"

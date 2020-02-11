@@ -5,9 +5,6 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-
-import Foundation
-
 public enum OverflowValue: String {
   
   case visible = "visible"

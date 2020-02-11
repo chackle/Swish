@@ -5,9 +5,6 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-
-import Foundation
-
 // Currently we only instantiate Unit with a Double typing, this is in place for the future
 public enum Unit<T: Numeric> {
   

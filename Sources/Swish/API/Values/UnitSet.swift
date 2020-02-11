@@ -5,9 +5,6 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-
-import Foundation
-
 struct UnitSet<T: Numeric, R: Numeric, B: Numeric, L: Numeric> {
   
   let top: Unit<T>

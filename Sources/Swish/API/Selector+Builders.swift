@@ -5,9 +5,6 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-
-import Foundation
-
 public extension Selector {
 
   static func selector(_ name: String, _ properties: Property...) -> Selector {
