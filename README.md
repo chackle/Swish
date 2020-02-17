@@ -32,9 +32,25 @@ let css = CSS(
 
 The above should look pretty recognizable if you've ever used CSS before. Swish property builder functions map to CSS, but they also remove the need to specify all values for some properties. Take padding for example, normally we would have to specify `16px 0px 0px 16px` if we wanted to change a `top` and `left` value. With Swish you can simply specify `.padding(top: .px(16), left: .px(16))` and it'll fill in the blanks.
 
+### Pseudo classes and elements
+
+Swish also supports pseudo-classes and pseudo-elements:
+
+``` swift
+let css = CSS(
+  .element("li", 
+    .background(color: .aquamarine)
+  ),
+  .element("li", pseudoClass: .hover,
+    .background(color: .forestGreen),
+    .transition(property: .color, duration: .s(3))
+  )
+)
+```
+
 ## 🤔 Using Unsupported Properties
 
-Swish doesn't support all CSS properties natively (yet), but if there is a property you wish to use then you can use the `.raw` builder to inject your own property name and value. Here's an example of how we would add an unsupported `border` property:
+Swish doesn't support all CSS properties natively (yet), but if there is a property you wish to use then you can use the `.raw` builder to inject your own property name and value. Here's an example of how we would add the `border` property if it wasn't supported (it is):
 
 ``` swift
 let css = CSS(
