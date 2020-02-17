@@ -17,12 +17,12 @@ Swish allows you to write CSS using expressive Swift code with type-safe builder
 let css = CSS(
   .class("home-header",
     .position(.relative),
-    .width(.pc(100)),
+    .width(.pct(100)),
     .height(.auto),
     .padding(.px(32)),
     .textAlign(.center)
   ),
-  .selector("body",
+  .element("body",
     .background(
       color: .hex(0x000000)
     )
