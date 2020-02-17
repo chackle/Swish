@@ -16,7 +16,7 @@ enum FontWeight {
   case value(Int)
 }
 
-extension FontWeight {
+extension FontWeight: CSSRepresentable { 
 
   var rawValue: String {
     switch self {
@@ -30,5 +30,3 @@ extension FontWeight {
     }
   }
 }
-
-extension FontWeight: CSSRepresentable { }

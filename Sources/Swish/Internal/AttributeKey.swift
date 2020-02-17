@@ -32,6 +32,7 @@ enum PropertyKey: String {
   case maxHeight = "max-height"
   case boxShadow = "box-shadow"
   case textAlign = "text-align"
+  case textOverflow = "text-overflow"
 }
 
 extension PropertyKey: CSSRepresentable { }

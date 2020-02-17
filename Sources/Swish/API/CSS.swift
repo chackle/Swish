@@ -7,9 +7,9 @@
 
 public struct CSS {
   
-  let selectors: [Selector]
+  let selectors: [AnySelector]
   
-  public init(_ selectors: Selector...) {
+  public init(_ selectors: AnySelector...) {
     self.selectors = selectors
   }
   
