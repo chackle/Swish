@@ -11,11 +11,11 @@ public extension Property {
     Property(key: .border, values: [width, style, color])
   }
   
-  static func borderRadius(top: Unit<Double>? = nil, right: Unit<Double>? = nil, bottom: Unit<Double>? = nil, left: Unit<Double>? = nil) -> Property {
-    Property(key: .borderRadius, values: [top, right, bottom, left])
+  static func borderRadius(top: Unit<Double> = .px(0), right: Unit<Double> = .px(0), bottom: Unit<Double> = .px(0), left: Unit<Double> = .px(0)) -> Property {
+    Property(key: .borderRadius, value: UnitSet<Double, Double, Double, Double>(top: top, right: right, bottom: bottom, left: left))
   }
   
   static func borderRadius(_ value: Unit<Double>) -> Property {
-    Property(key: .borderRadius, value: value)
+    Property(key: .borderRadius, value: UnitSet<Double, Double, Double, Double>(top: value, right: value, bottom: value, left: value))
   }
 }

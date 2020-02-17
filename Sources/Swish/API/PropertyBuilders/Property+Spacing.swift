@@ -21,7 +21,7 @@ public extension Property {
     Property(key: .padding, value: UnitSet<Double, Double, Double, Double>(top: top, right: right, bottom: bottom, left: left))
   }
   
-  static func padding(_ value: Unit<Double> = .px(0)) -> Property {
+  static func padding(_ value: Unit<Double>) -> Property {
     Property(key: .padding, value: UnitSet<Double, Double, Double, Double>(top: value, right: value, bottom: value, left: value))
   }
 }
