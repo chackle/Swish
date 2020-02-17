@@ -5,7 +5,7 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-enum PropertyKey: String {
+public enum PropertyKey: String {
   
   case animation
   case background
@@ -26,6 +26,7 @@ enum PropertyKey: String {
   case left
   case bottom
   case transform
+  case transition
   case minWidth = "min-width"
   case maxWidth = "max-width"
   case minHeight = "min-height"
