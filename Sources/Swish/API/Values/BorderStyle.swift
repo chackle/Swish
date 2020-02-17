@@ -7,16 +7,18 @@
 
 enum BorderStyle: String {
 
-  case none = "none"
-  case hidden = "hidden"
-  case dotted = "dotted"
-  case dashed = "dashed"
-  case solid = "solid"
-  case double = "double"
-  case groove = "groove"
-  case ridge = "ridge"
-  case inset = "inset"
-  case outset = "outset"
-  case initial = "initial"
-  case inherit = "inherit"
+  case none
+  case hidden
+  case dotted
+  case dashed
+  case solid
+  case double
+  case groove
+  case ridge
+  case inset
+  case outset
+  case initial
+  case inherit
 }
+
+extension BorderStyle: CSSRepresentable { }

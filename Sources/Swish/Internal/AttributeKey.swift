@@ -7,19 +7,30 @@
 
 enum PropertyKey: String {
   
-  case animation = "animation"
-  case background = "background"
-  case color = "color"
-  case cursor = "cursor"
-  case font = "font"
-  case width = "width"
-  case height = "height"
-  case display = "display"
-  case position = "position"
-  case border = "border"
-  case padding = "padding"
-  case margin = "margin"
-  case overflow = "overflow"
+  case animation
+  case background
+  case color
+  case cursor
+  case font
+  case width
+  case height
+  case display
+  case position
+  case border
+  case padding
+  case margin
+  case overflow
+  case opacity
+  case top
+  case right
+  case left
+  case bottom
+  case transform
+  case minWidth = "min-width"
+  case maxWidth = "max-width"
+  case minHeight = "min-height"
+  case maxHeight = "max-height"
+  case boxShadow = "box-shadow"
   case textAlign = "text-align"
 }
 

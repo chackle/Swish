@@ -7,12 +7,12 @@
 
 public enum OverflowValue: String {
   
-  case visible = "visible"
-  case hidden = "hidden"
-  case scroll = "scroll"
-  case auto = "auto"
-  case intial = "initial"
-  case inherit = "inherit"
+  case visible
+  case hidden
+  case scroll
+  case auto
+  case intial
+  case inherit
 }
 
 extension OverflowValue: CSSRepresentable { }
