@@ -14,4 +14,12 @@ public extension Property {
   static func textAlign(_ value: TextAlignValue) -> Property {
     Property(key: .textAlign, value: value)
   }
+
+  static func textShadow(width: Unit<Double>, height: Unit<Double>, blurRadius: Unit<Double>? = nil, color: Color? = nil) -> Property {
+    Property(key: .textShadow, [width, height, blurRadius, color].compactMap( { $0 } ))
+  }
+
+  static func textShadow(_ value: GenericValue) -> Property {
+    Property(key: .textShadow, value: value)
+  }
 }

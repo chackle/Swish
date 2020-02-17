@@ -36,6 +36,7 @@ public enum PropertyKey: String {
   case boxShadow = "box-shadow"
   case textAlign = "text-align"
   case textOverflow = "text-overflow"
+  case textShadow = "text-shadow"
 }
 
 extension PropertyKey: CSSRepresentable { }
