@@ -20,6 +20,8 @@ public enum PropertyKey: String {
   case padding
   case margin
   case overflow
+  case overflowX = "overflow-x"
+  case overflowY = "overflow-y"
   case opacity
   case top
   case right
