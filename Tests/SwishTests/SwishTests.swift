@@ -22,7 +22,7 @@ final class SwishTests: XCTestCase {
       .element("ul",
         .background(color: .cornflowerBlue)
       ),
-      .element("li", .pseudoClass(.nthChild(3)),
+      .element("li", pseudoClass: .nthChild(3),
         .background(color: .aliceBlue)
       )
     )

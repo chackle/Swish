@@ -17,6 +17,7 @@ public enum PropertyKey: String {
   case display
   case position
   case border
+  case borderRadius = "border-radius"
   case padding
   case margin
   case overflow
