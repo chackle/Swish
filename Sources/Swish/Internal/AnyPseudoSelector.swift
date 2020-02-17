@@ -5,7 +5,7 @@
 *  MIT license, see LICENSE file for details
 */
 
-class AnyPseudoSelector {
+public class AnyPseudoSelector {
 
   let pseudoSelector: PseudoSelector
   let innerSelector: Selector?

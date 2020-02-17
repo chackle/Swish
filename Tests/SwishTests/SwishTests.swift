@@ -19,14 +19,20 @@ final class SwishTests: XCTestCase {
 
   func testElementRender() {
     let css = CSS(
-      .element("p", .pseudoClass(.nthChild(3)),
-        .backgroundColor(.hex(0xff0000))
+      .element("ul",
+        .background(color: .cornflowerBlue)
+      ),
+      .element("li", .pseudoClass(.nthChild(3)),
+        .background(color: .aliceBlue)
       )
     )
+    print(css.render())
+    XCTAssertEqual(css.render(), "ul { background: #6495ED; } li:nth-child(3) { background: #F0F8FF; }")
   }
 
   static var allTests = [
       ("testClassRender", testClassRender),
-      ("testSelectorRender", testSelectorRender)
+      ("testSelectorRender", testSelectorRender),
+      ("testElementRender", testElementRender)
   ]
 }

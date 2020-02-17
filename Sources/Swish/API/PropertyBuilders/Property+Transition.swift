@@ -8,6 +8,6 @@
 public extension Property {
 
   static func transition(property: PropertyKey, duration: Duration, timingFunction: TimingFunction? = nil, delay: Duration? = nil) -> Property {
-    Property(key: .transition, [property, duration, timingFunction, delay].compactMap( { $0 } ))
+    Property(key: .transition, values: [property, duration, timingFunction, delay])
   }
 }

@@ -5,7 +5,7 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-enum Duration {
+public enum Duration {
 
   case s(Int)
   case ms(Int)

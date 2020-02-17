@@ -16,7 +16,7 @@ public extension Property {
   }
 
   static func textShadow(width: Unit<Double>, height: Unit<Double>, blurRadius: Unit<Double>? = nil, color: Color? = nil) -> Property {
-    Property(key: .textShadow, [width, height, blurRadius, color].compactMap( { $0 } ))
+    Property(key: .textShadow, values: [width, height, blurRadius, color])
   }
 
   static func textShadow(_ value: GenericValue) -> Property {

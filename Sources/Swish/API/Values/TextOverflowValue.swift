@@ -14,14 +14,15 @@ enum TextOverflowValue {
   case inherit
 }
 
-extension CSSRepresentable {
+extension TextOverflowValue: CSSRepresentable {
 
-  var rawValue: String {
+  public var rawValue: String {
     switch self {
       case .clip: return "clip"
       case .ellipsis: return "ellipsis"
       case .value(let value): return "\"\(value)\""
       case .inherit: return "inherit"
+      case .initial: return "initial"
     }
   }
 }

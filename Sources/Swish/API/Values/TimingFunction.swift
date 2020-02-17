@@ -37,7 +37,7 @@ extension TimingFunction: CSSRepresentable {
   }
 }
 
-enum TimingFunctionStep: String {
+public enum TimingFunctionStep: String {
 
   case start
   case end

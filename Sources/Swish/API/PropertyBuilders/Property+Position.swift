@@ -12,18 +12,18 @@ public extension Property {
   }
 
   static func top(_ value: Unit<Double>) -> Property {
-    Property(key: .top, value)
+    Property(key: .top, value: value)
   }
 
   static func right(_ value: Unit<Double>) -> Property {
-    Property(key: .right, value)
+    Property(key: .right, value: value)
   }
 
   static func bottom(_ value: Unit<Double>) -> Property {
-    Property(key: .bottom, value)
+    Property(key: .bottom, value: value)
   }
 
   static func left(_ value: Unit<Double>) -> Property {
-    Property(key: .left, value)
+    Property(key: .left, value: value)
   }
 }

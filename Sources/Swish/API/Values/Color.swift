@@ -167,7 +167,6 @@ public extension Color {
   static var teal: Color { .hex(0x008080) }
   static var thistle: Color { .hex(0xd8bfd8) }
   static var tomato: Color { .hex(0xff6347) }
-  static var skyBlue: Color { .hex(0x87ceeb) }
   static var turquoise: Color { .hex(0x40e0d0) }
   static var violet: Color { .hex(0xee82ee) }
   static var wheat: Color { .hex(0xf5deb3) }

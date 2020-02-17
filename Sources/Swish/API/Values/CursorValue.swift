@@ -42,7 +42,7 @@ public enum CursorValue: String {
   case wResize = "w-resize"
   case wait
   case zoomIn = "zoom-in"
-  case zoom-out = "zoom-out"
+  case zoomOut = "zoom-out"
   case initial
   case inherit
 }

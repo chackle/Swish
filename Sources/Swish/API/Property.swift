@@ -33,6 +33,6 @@ public struct Property {
 extension Property: CSSRepresentable {
   
   var rawValue: String {
-    "\(name): \(values.compactMap( { $0.rawValue } ).joined(separator: " "));"
+    "\(name): \(values.compactMap( { $0?.rawValue } ).joined(separator: " "));"
   }
 }

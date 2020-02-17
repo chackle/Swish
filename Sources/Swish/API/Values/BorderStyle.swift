@@ -5,7 +5,7 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-enum BorderStyle: String {
+public enum BorderStyle: String {
 
   case none
   case hidden
