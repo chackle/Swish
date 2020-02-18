@@ -30,8 +30,8 @@ final class SwishTests: XCTestCase {
   }
 
   static var all = [
-      ("CSS Class render()", testClassRender),
-      ("CSS Selector render()", testSelectorRender),
-      ("CSS Element render()", testElementRender)
+      ("testClassRender", testClassRender),
+      ("testSelectorRender", testSelectorRender),
+      ("testElementRender", testElementRender)
   ]
 }
