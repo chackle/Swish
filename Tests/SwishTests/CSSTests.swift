@@ -1,7 +1,7 @@
 import XCTest
 @testable import Swish
 
-final class SwishTests: XCTestCase {
+final class CSSTests: XCTestCase {
 
   func testClassRender() {
     let css = CSS(
