@@ -4,12 +4,12 @@ import XCTest
 final class UnitTests: XCTestCase {
 
   func testUnitPxRawValue() {
-    let unit = Unit<Double>.px(32)
+    let unit = Unit.px(32)
     XCTAssertEqual(unit.rawValue, "32px")
   }
 
   func testUnitPctRawValue() {
-    let unit = Unit<Double>.px(32)
+    let unit = Unit.px(32)
     XCTAssertEqual(unit.rawValue, "32%")
   }
 
