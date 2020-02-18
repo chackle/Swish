@@ -2,8 +2,9 @@ language: swift
 os: osx
 osx_image: xcode11.3
 before_script:
-- gem install xcpretty
+  - gem install xcpretty
 script:
-- swift package generate-xcodeproj
-- set -o pipefail && xcodebuild -scheme Swish clean build | xcpretty
-build test | xcpretty
+  - swift package generate-xcodeproj
+  - set -o pipefail && xcodebuild -scheme TaskerServer-Package clean build test | xcpretty
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
