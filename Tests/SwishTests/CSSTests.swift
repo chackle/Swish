@@ -26,13 +26,12 @@ final class SwishTests: XCTestCase {
         .background(color: .aliceBlue)
       )
     )
-    print(css.render())
     XCTAssertEqual(css.render(), "ul { background: #6495ED; } li:nth-child(3) { background: #F0F8FF; }")
   }
 
   static var all = [
-      ("testClassRender", testClassRender),
-      ("testSelectorRender", testSelectorRender),
-      ("testElementRender", testElementRender)
+      ("CSS Class render()", testClassRender),
+      ("CSS Selector render()", testSelectorRender),
+      ("CSS Element render()", testElementRender)
   ]
 }

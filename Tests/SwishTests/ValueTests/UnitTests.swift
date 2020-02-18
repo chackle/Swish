@@ -19,8 +19,8 @@ final class UnitTests: XCTestCase {
   }
 
   static var all = [
-      ("testUnitPxRawValue", testUnitPxRawValue),
-      ("testUnitSetRawValue", testUnitSetRawValue),
-      ("testUnitPctRawValue", testUnitPctRawValue)
+      ("Unit Px rawValue", testUnitPxRawValue),
+      ("Unit Pct rawValue", testUnitPctRawValue)
+      ("UnitSet rawValue", testUnitSetRawValue)
   ]
 }
