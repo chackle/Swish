@@ -30,7 +30,7 @@ final class SwishTests: XCTestCase {
     XCTAssertEqual(css.render(), "ul { background: #6495ED; } li:nth-child(3) { background: #F0F8FF; }")
   }
 
-  static var allTests = [
+  static var all = [
       ("testClassRender", testClassRender),
       ("testSelectorRender", testSelectorRender),
       ("testElementRender", testElementRender)
