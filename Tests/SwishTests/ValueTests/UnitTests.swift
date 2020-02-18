@@ -9,12 +9,12 @@ final class UnitTests: XCTestCase {
   }
 
   func testUnitPctRawValue() {
-    let unit = Unit.px(32)
+    let unit = Unit.pct(32)
     XCTAssertEqual(unit.rawValue, "32%")
   }
 
   func testUnitSetRawValue() {
-    let unitSet = UnitSet<Double, Double, Double, Double>(first: .px(32), second: .pct(20), third: .em(16), fourth: .pc(8))
+    let unitSet = UnitSet<Int, Int, Int, Int>(first: .px(32), second: .pct(20), third: .em(16), fourth: .pc(8))
     XCTAssertEqual(unitSet.rawValue, "32px 20% 16em 8pc")
   }
 
