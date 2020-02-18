@@ -1,10 +1,8 @@
+os:
+  - osx
 language: swift
-os: osx
 osx_image: xcode11.3
-before_script:
-  - gem install xcpretty
+install: swift package update
 script:
-  - swift package generate-xcodeproj
-  - set -o pipefail && xcodebuild -scheme Swish clean build test | xcpretty
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - swift build
+  - swift test
