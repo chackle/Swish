@@ -6,3 +6,4 @@ before_script:
 script:
 - swift package generate-xcodeproj
 - set -o pipefail && xcodebuild -scheme Swish clean build | xcpretty
+build test | xcpretty
