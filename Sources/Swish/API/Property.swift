@@ -5,16 +5,13 @@
 *  MIT license, see LICENSE file for details
 */ 
 
-
-import Foundation
-
 public struct Property {
   
   let name: String
-  let values: [CSSRepresentable]
+  let values: [CSSRepresentable?]
   
   // MARK: - Initializers
-  init(name: String, values: [CSSRepresentable]) {
+  init(name: String, values: [CSSRepresentable?]) {
     self.name = name
     self.values = values
   }
@@ -27,7 +24,7 @@ public struct Property {
     self.init(name: key.rawValue, value: value)
   }
 
-  init(key: PropertyKey, values: [CSSRepresentable]) {
+  init(key: PropertyKey, values: [CSSRepresentable?]) {
     self.init(name: key.rawValue, values: values)
   }
 }
@@ -36,6 +33,6 @@ public struct Property {
 extension Property: CSSRepresentable {
   
   var rawValue: String {
-    "\(name): \(values.map( { $0.rawValue } ).joined(separator: " "));"
+    "\(name): \(values.compactMap( { $0?.rawValue } ).joined(separator: " "));"
   }
 }
