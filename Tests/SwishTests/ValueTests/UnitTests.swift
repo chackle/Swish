@@ -20,7 +20,7 @@ final class UnitTests: XCTestCase {
 
   static var all = [
       ("Unit Px rawValue", testUnitPxRawValue),
-      ("Unit Pct rawValue", testUnitPctRawValue)
+      ("Unit Pct rawValue", testUnitPctRawValue),
       ("UnitSet rawValue", testUnitSetRawValue)
   ]
 }
