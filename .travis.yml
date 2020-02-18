@@ -3,6 +3,8 @@ os:
 language: swift
 osx_image: xcode11.3
 install: swift package update
+before_script:
+- gem install xcpretty
 script:
   - swift build
-  - swift test
+  - swift test 2>&1 | xcpretty
