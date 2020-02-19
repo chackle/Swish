@@ -1,8 +1,11 @@
 # 🎨 Swish
 <p>
+    <a href="https://travis-ci.com/chackle/Swish">
+      <img src="https://travis-ci.com/chackle/Swish.svg?branch=master" alt="Travis CI" />
+    </a>
     <img src="https://img.shields.io/badge/Swift-5.1-orange.svg" />
     <a href="https://swift.org/package-manager">
-        <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
+      <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
     <img src="https://img.shields.io/badge/platforms-mac+linux-brightgreen.svg?style=flat" alt="Mac + Linux" />
 </p>
