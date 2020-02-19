@@ -21,6 +21,6 @@ public struct AnySelector {
 extension AnySelector: CSSRepresentable {
   
   var rawValue: String {
-    "\(selector.rawValue)\(pseudoSelector?.rawValue ?? "") { \(properties.map( { $0.rawValue } ).joined(separator: " ")) }"
+    "\(selector.rawValue)\(pseudoSelector?.rawValue ?? "") { \(properties.map( { $0.rawValue } ).joined(separator: " "))\(properties.count > 0 ? " " : "")}"
   }
 }

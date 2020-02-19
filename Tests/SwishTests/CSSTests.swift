@@ -3,21 +3,42 @@ import XCTest
 
 final class CSSTests: XCTestCase {
 
-  func testClassRender() {
+  func testBasicAnySelectorRender() {
     let css = CSS(
-      .class("my-class")
+      .selector("selector")
     )
-    XCTAssertEqual(css.render(), ".my-class {  }")
-  }
-  
-  func testSelectorRender() {
-    let css = CSS(
-      .selector("p")
-    )
-    XCTAssertEqual(css.render(), "p {  }")
+    XCTAssertEqual(css.render(), "selector { }")
   }
 
-  func testElementRender() {
+  func testBasicClassRender() {
+    let css = CSS(
+      .class("class")
+    )
+    XCTAssertEqual(css.render(), ".class { }")
+  }
+  
+  func testBasicIdRender() {
+    let css = CSS(
+      .id("id")
+    )
+    XCTAssertEqual(css.render(), "#id { }")
+  }
+
+  func testBasicElementRender() {
+    let css = CSS(
+      .element("element")
+    )
+    XCTAssertEqual(css.render(), "element { }")
+  }
+
+  func testBasicAttributeRender() {
+    let css = CSS(
+      .element("attribute")
+    )
+    XCTAssertEqual(css.render(), "[attribute] { }")
+  }
+
+  func testComplexElementRender() {
     let css = CSS(
       .element("ul",
         .background(color: .cornflowerBlue)
@@ -30,8 +51,11 @@ final class CSSTests: XCTestCase {
   }
 
   static var all = [
-      ("testClassRender", testClassRender),
-      ("testSelectorRender", testSelectorRender),
-      ("testElementRender", testElementRender)
+    ("testBasicAnySelectorRender", testBasicAnySelectorRender),
+    ("testBasicClassRender", testBasicClassRender),
+    ("testBasicIdRender", testBasicIdRender),
+    ("testBasicElementRender", testBasicElementRender),
+    ("testBasicAttributeRender", testBasicAttributeRender),
+    ("testComplexElementRender", testComplexElementRender)
   ]
 }
