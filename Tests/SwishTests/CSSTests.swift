@@ -33,7 +33,7 @@ final class CSSTests: XCTestCase {
 
   func testBasicAttributeRender() {
     let css = CSS(
-      .element("attribute")
+      .attribute("attribute")
     )
     XCTAssertEqual(css.render(), "[attribute] { }")
   }
